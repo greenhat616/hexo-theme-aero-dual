@@ -30,8 +30,23 @@
         <!-- Post Main Content -->
         <div class="post-content">
           <%- post.content %>
+          <br />
+          <hr />
+          <div id="comment"></div>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
 </article>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: 'lbF4ajEDofgIbJLs1hGgxbTE-gzGzoHsz',
+    appKey: 'yX3gjBPOuQXX3O7JuWUIi8K8',
+    placeholder: 'Just Go Go..',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
+</script>
