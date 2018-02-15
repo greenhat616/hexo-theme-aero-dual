@@ -1,11 +1,12 @@
 # Header Menu
 menu:
-  Home: /
-  Archives: /archives
+  主页: /
+  文章: /archives
+  友情链接: /friendship
   # change github and email values to your own addresses
-  Github: https://github.com/<your-github-username>
-  Email: mailto:<your-email-address>
-rss: /atom.xml
+  Github: https://github.com/a632079 
+  Email: mailto:a632079@qq.com
+rss: /rss.xml
 
 # Set to false to disable banner
 use_header_cover: true
@@ -35,7 +36,7 @@ archive_type: 'monthly'
 show_count: true
 
 # favicon
-favicon: /favicon.png
+favicon: https://cdn.a632079.me/favicon.ico
 
 # Google Analytics Tracking ID
 google_analytics:
