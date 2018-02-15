@@ -40,33 +40,57 @@
 }
 
 blockquote {
-    border-left: 5px solid #1abc9c;
-    color: #00a777;
-    background-color: #e6fffa;
+    $color: $theme-blockquote-color;
+    border-left: 5px solid $theme-blockquote-borderColor;
+    color: $color;
+    background-color: $theme-blockquote-bgcolor;
+    padding-top: remify(5px);
+    padding-bottom: remify(5px);
+    p {
+        padding: 0;
+        margin-bottom: 0 !important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0;
+        margin: 0 !important;
+        >a {
+            color: $color;
+        }
+        color: $color;
+    }
 }
 
 #toc {
     width: 14em;
     position: absolute;
     top: remify(20px);
-    right: -15em;
-    // background-color: rgb(255, 242, 242);
+    right: -15em; // background-color: rgb(255, 242, 242);
     color: #333;
     border-left: #ffac02 solid 2px;
     padding-left: 1em;
-    ol {
+    >ol {
         li {
             list-style: none;
-            a {
+            >a {
                 border-bottom: none;
-            }   
+            }
+        }
+    }
+    >li {
+        list-style: none;
+        >a {
+            border-bottom: none;
         }
     }
 }
 
-
 p {
-    > a {
+    >a {
         padding-left: remify(3px);
         padding-right: remify(3px);
     }
@@ -74,7 +98,7 @@ p {
 
 a {
     &:hover {
-    color: #ffffff !important;
+        color: #ffffff !important;
     }
 }
 
@@ -93,5 +117,12 @@ a {
     }
     .post-content {
         font-size: remify(12.5px);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #toc {
+        margin-top: remify(10px);
+        position: unset;
     }
 }

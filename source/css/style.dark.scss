@@ -18,6 +18,11 @@ $theme-background       : $color-black;
 $theme-code-background  : $color-beige;
 $theme-seperator        : $color-white;
 $theme-dotted-seperator : $color-white;
+$theme-code-color: #FF3BB1;
+$theme-code-background: #F0F0F0;
+$theme-blockquote-color: #00a777;
+$theme-blockquote-bgcolor:#e6fffa;
+$theme-blockquote-borderColor: #1abc9c;
 
 @mixin color-revert {
     color: $theme-background;
@@ -25,6 +30,7 @@ $theme-dotted-seperator : $color-white;
 }
 
 @import '_helpers/mixins';
+@import url('https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 @import 'typo.css';
 @import '_typography/highlight.gruvbox-light';
