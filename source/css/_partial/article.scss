@@ -29,6 +29,7 @@
         padding: 0 remify(4px);
         margin-right: remify(2px);
         border-radius: remify(2px);
+        border-bottom: none;
     }
 }
 
@@ -43,12 +44,34 @@ blockquote {
     color: #00a777;
     background-color: #e6fffa;
 }
+
+#toc {
+    width: 14em;
+    position: absolute;
+    top: remify(20px);
+    right: -15em;
+    // background-color: rgb(255, 242, 242);
+    color: #333;
+    border-left: #ffac02 solid 2px;
+    padding-left: 1em;
+    ol {
+        li {
+            list-style: none;
+            a {
+                border-bottom: none;
+            }   
+        }
+    }
+}
+
+
 p {
     > a {
         padding-left: remify(3px);
         padding-right: remify(3px);
     }
 }
+
 a {
     &:hover {
     color: #ffffff !important;
