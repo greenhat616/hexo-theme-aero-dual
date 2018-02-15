@@ -1,0 +1,23 @@
+@mixin base-font-size($value) {
+    font-size: $value;
+    /* add PX (or original value) as backup */
+    @if $value == inherit {
+        /* do nothing, "inherit" has no unit */
+    } @else {
+        font-size: remify($value);
+    }
+}
+
+@function remify($value) {
+    /* separate mixin, so it can be used elsewhere */
+    $u: unit($value);
+    @if $u == 'px' {
+        @return (strip-units($value)/16) * 1em;
+    } @else {
+        @return $value;
+    }
+}
+
+@function strip-units($number){
+    @return $number / ($number * 0 + 1);
+}

@@ -1,0 +1,53 @@
+/* mobile style */
+
+.highlight {
+    overflow: auto;
+    table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: -1em;
+        tr {
+            td {
+                border: 0;
+                padding: 0;
+                height: auto;
+                word-wrap: break-word;
+            }
+        }
+    }
+    pre {
+        font-size: remify(13px);
+        padding: remity(10px) 0;
+    }
+    .gutter {
+        width: 5%;
+        text-align: right;
+        pre {
+            border: 0;
+        }
+    }
+    .code {
+        width: 95%;
+        pre {
+            border: 0;
+        }
+    }
+}
+
+code {
+    color: $theme-code-color;
+    word-wrap: break-word;
+    padding: remify(1px) remify(2px);
+    margin: 0 remify(2px);
+    border-radius: remify(1px);
+    background-color: $theme-code-background;
+}
+
+/* mobile style */
+
+@media only screen and (max-width: 414px) {
+    .highlight,
+    pre {
+        font-size: remify(12px);
+    }
+}

@@ -20,9 +20,7 @@
   <!-- Site Title -->
   <title><%- config.title %></title>
 
-  <!-- Bootstrap CSS -->
-  <%- css('css/bootstrap.min.css') %>
-  <!-- Custom CSS -->
+  <!-- APP CSS -->
   <% var targetStyle = 'css/style.' + (config.theme_style || 'light') + '.css' %>
   <%- css(targetStyle) %>
   <!-- Valine Comment -->

@@ -1,0 +1,11 @@
+{
+  "name": "aero-dual",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:a632079/hexo-theme-aero-dual.git",
+  "author": "a632079 <a632079@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
