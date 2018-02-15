@@ -46,22 +46,28 @@ blockquote {
     background-color: $theme-blockquote-bgcolor;
     padding-top: remify(5px);
     padding-bottom: remify(5px);
+    
     p {
         padding: 0;
         margin-bottom: 0 !important;
     }
+
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6 {
+    h6, 
+    strong,
+    em 
+    {
         padding: 0;
         margin: 0 !important;
-        >a {
-            color: $color;
-        }
-        color: $color;
+        color: $color !important;
+    }
+    
+    em{
+        font-style: oblique;
     }
 }
 
