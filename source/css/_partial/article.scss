@@ -46,7 +46,8 @@ blockquote {
     background-color: $theme-blockquote-bgcolor;
     padding-top: remify(5px);
     padding-bottom: remify(5px);
-    
+    padding-left: remify(1em);
+
     p {
         padding: 0;
         margin-bottom: 0 !important;
