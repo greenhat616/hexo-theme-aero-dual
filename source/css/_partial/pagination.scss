@@ -4,6 +4,7 @@
     display: block;
     text-align: center;
     overflow: hidden;
+    padding-top: remify(0.5em);
     >li {
         display: inline-block;
         margin-bottom: remify(1em);
@@ -13,6 +14,8 @@
             border: 1px solid $theme-color;
             border-radius: remify(3px);
             padding: remify(3px);
+            padding-right: 0.5em;
+            padding-left: 0.5em;
             &:hover {
                 @include color-revert;
                 border: 1px solid $theme-color;

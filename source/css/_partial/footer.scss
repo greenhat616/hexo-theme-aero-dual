@@ -3,4 +3,7 @@ footer {
     border-top: 1px solid $theme-seperator;
     font-size: remify(12px);
     text-align: center;
+    p {
+        margin: 0;
+    }
 }

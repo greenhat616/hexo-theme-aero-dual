@@ -47,27 +47,15 @@ blockquote {
     padding-top: remify(5px);
     padding-bottom: remify(5px);
     padding-left: remify(1em);
-
-    p {
-        padding: 0;
+    >p {
         margin-bottom: 0 !important;
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6, 
     strong,
-    em 
-    {
-        padding: 0;
+    em {
         margin: 0 !important;
         color: $color !important;
     }
-    
-    em{
+    em {
         font-style: oblique;
     }
 }
