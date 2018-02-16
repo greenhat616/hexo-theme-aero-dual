@@ -21,11 +21,14 @@
   <title><%- config.title %></title>
 
   <!-- APP CSS -->
+  <%- css('css/typo.css') %>
   <% var targetStyle = 'css/style.' + (config.theme_style || 'light') + '.css' %>
   <%- css(targetStyle) %>
+
   <!-- Valine Comment -->
   <script src="https://static.a632079.me/tools/av-min/3.0.4/av-min.js"></script>
   <script src='https://static.a632079.me/tools/valine/1.1.9-beta4/Valine.min.js'></script>
+  
   <!-- Google Analytics -->
   <%- partial('google-analytics') %>
 </head>
