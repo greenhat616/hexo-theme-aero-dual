@@ -1,7 +1,7 @@
 <!-- Page Header -->
 <%
   var headerClass = 'site-header';
-  var headerStyle = '';
+  var headerPictrue = '';
   var pageTitleClass = 'page-title';
   var pageTitle = '';
   var pageSubtitle = '';
@@ -10,9 +10,9 @@
   if (theme.use_header_cover) {
     headerClass += ' header-background';
     if (config.root === '/') {
-      headerStyle = 'background-image: url(' + theme.index_cover + ')';
+      headerPictrue = theme.index_cover;
     } else {
-      headerStyle = 'background-image: url(' + config.root + theme.index_cover + ')';
+      headerPictrue = config.root + theme.index_cover;
     }
     pageTitleClass += ' with-background-image';
     siteMenuClass += ' with-background-image';
@@ -28,8 +28,10 @@
     pageTitle = __('archive_title');
   }
 %>
-
-<header class="<%= headerClass %>" style="<%= headerStyle %>">
+<script>
+  var BannerURL = "<%= headerPictrue %>"
+</script>
+<header class="<%= headerClass %>">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
