@@ -4,6 +4,8 @@
     position: relative;
     
     // Reset Flex BOX
+    display: -webkit-box; // Support for Old Browser
+    display: -ms-flexbox; // Support for IE
     display: -webkit-flex; // Support Safari
     display: flex;
     align-items: center; // Content Center
