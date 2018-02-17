@@ -6,7 +6,7 @@
     // Reset Flex BOX
     display: -webkit-flex; // Support Safari
     display: flex;
-    justify-items: center; // Content Center
+    align-items: center; // Content Center
 
     height: remify(30rem);
     padding: remify(40px) 0;
