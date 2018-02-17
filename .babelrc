@@ -1,0 +1,13 @@
+{
+    "presets": [
+        ["env", {
+            "modules": false,
+            "targets": {
+                "browsers": ["ie>=10"]
+            },
+            "useBuiltIns": true,
+            "forceAllTransforms": true,
+            "debug": false
+        }]
+    ]
+}

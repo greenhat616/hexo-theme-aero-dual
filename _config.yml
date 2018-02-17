@@ -41,3 +41,12 @@ favicon: https://cdn.a632079.me/favicon.ico
 # Google Analytics Tracking ID
 google_analytics:
 
+# Valine Config
+valine:
+  enable: true
+  notify: false
+  verify: false
+  appId: 'lbF4ajEDofgIbJLs1hGgxbTE-gzGzoHsz'
+  appKey: 'yX3gjBPOuQXX3O7JuWUIi8K8'
+  placeholder: 'ヾﾉ≧∀≦)o来啊，嗨皮啊。'
+  avatar: 'mm'

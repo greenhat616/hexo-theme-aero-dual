@@ -47,22 +47,33 @@
                   <div class="post-content">
                     <%- post.content %>
                       <br />
-                      <hr />
+                      <hr id="comment-hr" style="display:none;"/>
                       <div id="comment"></div>
                   </div>
         </div>
       </div>
     </div>
   </article>
-  <script>
-    new Valine({
-      el: '#comment',
-      notify: false,
-      verify: false,
-      appId: 'lbF4ajEDofgIbJLs1hGgxbTE-gzGzoHsz',
-      appKey: 'yX3gjBPOuQXX3O7JuWUIi8K8',
-      placeholder: 'Just Go Go..',
-      path: window.location.pathname,
-      avatar: 'mm'
-    });
-  </script>
+  <% 
+    var config
+    if (theme.valine && theme.valine.enable) { 
+      config = {};
+      config.notify = !!theme.valine.notify;
+      config.verify = !!theme.valine.verify;
+      config.appId = theme.valine.appId;
+      config.appKey = theme.valine.appKey;
+      config.placeholder = theme.valine.placeholder;
+      config.avatar = theme.valine.avatar;
+    }
+  %>
+
+  <% if (config) { %>
+    <script>  
+      window.ValineConfigString = <%- JSON.stringify(config) %>;
+      window.ValineConfig = Object.assign({
+        el: '#comment',
+        path: window.location.pathname,
+      }, ValineConfigString);
+      delete window.ValineConfigString;
+    </script>
+  <% } %> 
