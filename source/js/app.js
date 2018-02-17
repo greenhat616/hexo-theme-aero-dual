@@ -1,10 +1,6 @@
 // Write Hitokoto
 function write(text) {
-    if (text.length < 40) {
         $('#hitokoto').text(text);
-    } else {
-        gethitokoto();
-    }
 };
 
 
