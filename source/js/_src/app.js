@@ -3,7 +3,6 @@ function write(text) {
         $('#hitokoto').text(text);
 };
 
-
 // Auto Request Hitokoto
 (function gethitokoto() {
     $.ajax({
