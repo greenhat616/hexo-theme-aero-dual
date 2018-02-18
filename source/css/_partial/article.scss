@@ -97,6 +97,42 @@ a {
     }
 }
 
+// Friendship
+.friendship {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    .card:hover {
+        background-color: rgb(220,220,220);
+    }
+
+    >div>div>div>div {
+        // Card Body
+        >h1 {
+            // Name
+            margin: 0;
+            margin-left: 3em;
+        }
+        >p {
+            // Description
+            margin: 0;
+            margin-left: 6em;
+            margin-top: 0.15em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        >img {
+            // Logo Pictrue
+            border: remify(2px) solid #bbb;
+            border-radius: 50%;
+            width: 5em;
+            height: 5em;
+            float: left;
+        }
+    }
+}
+
 /* mobile style */
 
 @media only screen and (max-width: 414px) {
@@ -121,3 +157,4 @@ a {
         position: unset;
     }
 }
+
