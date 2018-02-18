@@ -33,7 +33,7 @@ const gethitokoto = () => {
 // Async Load Header Banner
 
 const asyncLoadBanner = () => {
-  window.BannerIMG = (typeof BannerURL === 'undefined') ? 'https://piccdn.freejishu.com/images/2017/08/22/qerIg.png!/format/jpg' : window.BannerIMG
+  window.BannerIMG = (typeof window.BannerURL === 'undefined') ? 'https://piccdn.freejishu.com/images/2017/08/22/qerIg.png!/format/jpg' : window.BannerURL
   console.log('[Banner] 发现 Banner ， 加载图片...')
   const ts = Date.now() // Get TS
 
@@ -67,7 +67,7 @@ const asyncLoadValine = config => {
       new window['Valine'](config)
       console.log('Valine 加载完成, 耗时: %s ms', (Date.now() - ts))
     })
-    .catch(e => console.error('加载 Valine 失败,', e));
+    .catch(e => console.error('加载 Valine 失败,', e))
 }
 
 // Run Function

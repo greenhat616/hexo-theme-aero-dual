@@ -3210,7 +3210,7 @@ var gethitokoto = function gethitokoto() {
 // Async Load Header Banner
 
 var asyncLoadBanner = function asyncLoadBanner() {
-  window.BannerIMG = typeof BannerURL === 'undefined' ? 'https://piccdn.freejishu.com/images/2017/08/22/qerIg.png!/format/jpg' : window.BannerIMG;
+  window.BannerIMG = typeof window.BannerURL === 'undefined' ? 'https://piccdn.freejishu.com/images/2017/08/22/qerIg.png!/format/jpg' : window.BannerURL;
   console.log('[Banner] 发现 Banner ， 加载图片...');
   var ts = Date.now(); // Get TS
 
