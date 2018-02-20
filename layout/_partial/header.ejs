@@ -22,7 +22,7 @@
     pageTitle = config.title;
     if (config.subtitle) pageSubtitle = config.subtitle;
   } else if (headerType === 'post') {
-    if (post && post.cover) headerStyle = 'background-image: url(' + post.cover + ')';
+    if (post && post.cover) headerPictrue = post.cover;
     pageTitle = post.title || __('untitled_post');
   } else if (headerType === 'archive') {
     pageTitle = __('archive_title');
