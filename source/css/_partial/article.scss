@@ -49,6 +49,7 @@ blockquote {
     padding-left: remify(1em);
     >p {
         margin-bottom: 0 !important;
+        word-break: break-all;
     }
     strong,
     em {
