@@ -42,7 +42,9 @@ pre, code {
 
 .heart:before { 
   content: "\e798"; 
+  font-style: normal;
+  font-family: "iconfont";
 }
 .heart {
-  color: red;
+  color: #DC143C;
 }
