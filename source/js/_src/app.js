@@ -50,7 +50,7 @@ const asyncLoadBanner = () => {
 // Async Load Valine
 const asyncLoadValine = config => {
   if (!config) return
-  const urls = [`https://static.a632079.me/tools/av-min/3.0.4/av-min.js`, `https://static.a632079.me/tools/valine/1.1.9-beta4/Valine.min.js`]
+  const urls = [`https://cdn1.lncld.net/static/js/3.6.3/av-min.js`, `https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js`]
   const asyncloader = url =>
     new Promise((resolve, reject) => {
       const script = document.createElement('script')

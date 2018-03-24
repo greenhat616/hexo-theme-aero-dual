@@ -3227,7 +3227,7 @@ var asyncLoadBanner = function asyncLoadBanner() {
 // Async Load Valine
 var asyncLoadValine = function asyncLoadValine(config) {
   if (!config) return;
-  var urls = ['https://static.a632079.me/tools/av-min/3.0.4/av-min.js', 'https://static.a632079.me/tools/valine/1.1.9-beta4/Valine.min.js'];
+  var urls = ['https://cdn1.lncld.net/static/js/3.6.3/av-min.js', 'https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'];
   var asyncloader = function asyncloader(url) {
     return new Promise(function (resolve, reject) {
       var script = document.createElement('script');
