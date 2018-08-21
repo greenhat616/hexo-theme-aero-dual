@@ -18,7 +18,7 @@
   <% } %>
 
   <!-- Site Title -->
-  <title><%- config.title %></title>
+  <title><% if (page.title){ %><%= page.title %> | <% } %><%- config.title %></title>
 
   <!-- APP CSS -->
   <% var targetStyle = 'css/style.' + (config.theme_style || 'light') + '.css' %>
