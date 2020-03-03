@@ -113,6 +113,9 @@ a {
             // Name
             margin: 0;
             margin-left: 3em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         >p {
             // Description
@@ -125,7 +128,7 @@ a {
         }
         >img {
             // Logo Pictrue
-            border: remify(2px) solid #bbb;
+            border: remify(1px) solid #dddddd;
             border-radius: 50%;
             width: 5em;
             height: 5em;
