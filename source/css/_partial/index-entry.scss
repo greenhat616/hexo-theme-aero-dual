@@ -12,7 +12,8 @@
         display: inline-block;
         padding: 0 remify(10px);
         margin-bottom: remify(20px);
-        font-size: remify(22px);
+        font-size: 1.55em;
+        font-family: 'ZCOOL XiaoWei', Helvetica, sans-serif;
         text-align: center;
         border-radius: remify(2px);
     }
@@ -88,7 +89,9 @@
             float: none;
         }
         .post-title {
-            font-size: remify(18px);
+            font-size: 1.34em;
+            margin-bottom: 0.5em;
+            font-family: 'ZCOOL XiaoWei', Helvetica, sans-serif;
         }
     }
 }
