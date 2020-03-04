@@ -43,7 +43,7 @@ google_analytics:
 
 # Valine Config
 valine:
-  enable: true
+  enable: false
   notify: true
   verify: false
   appId: 'lbF4ajEDofgIbJLs1hGgxbTE-gzGzoHsz'
