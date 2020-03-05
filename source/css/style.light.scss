@@ -32,7 +32,7 @@ $theme-blockquote-borderColor: #1abc9c;
 @import '_helpers/mixins';
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css');
 
-@import url('https://static.a632079.me/tools/typo/lastest/typo.min.css');
+@import url('https://cdn.jsdelivr.net/gh/sofish/typo.css@master/typo.min.css');
 @import '_typography/highlight.atom-one-dark';
 @import '_typography/code';
 
