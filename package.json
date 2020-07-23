@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "hexo-generator-baidu-sitemap": "^0.1.2",
+    "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-sitemap": "^1.2.0"
   },
   "devDependencies": {
